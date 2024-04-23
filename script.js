@@ -24,3 +24,7 @@ plusButton.addEventListener('click', () => {
     const currentQuantity = parseInt(quantityInput.value);
     quantityInput.value = currentQuantity + 1;
 });
+
+function sub() {
+    alert("Order is placed!!");
+}
