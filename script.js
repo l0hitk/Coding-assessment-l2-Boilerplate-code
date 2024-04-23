@@ -28,3 +28,15 @@ plusButton.addEventListener('click', () => {
 function sub() {
     alert("Order is placed!!");
 }
+
+const colorSelector = document.querySelector('.color-selector');
+const colorOptions = colorSelector.querySelectorAll('.color-option');
+const selectedColor = colorSelector.querySelector('.selected-color');
+
+colorOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    colorOptions.forEach(option => option.classList.remove('selected'));
+    option.classList.add('selected');
+    selectedColor.textContent = option.getAttribute('data-color');
+  });
+});
