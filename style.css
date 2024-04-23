@@ -100,12 +100,8 @@ padding-bottom: 25px;
 }
 
 .size-selector input[type="radio"]:checked {
-  /* Set the background color for the checked radio button */
   background-color: #007bff;
-
-  /* Set the border color for the checked radio button */
   border-color: #007bff;
-
 }
 
 .quantity-selector {
@@ -139,10 +135,8 @@ padding-bottom: 25px;
 }
 
 .container {
-
   border-radius: 25px;
   padding-left: 15%;
-
 }
 
 #imgtext {
@@ -151,22 +145,6 @@ padding-bottom: 25px;
   left: 15px;
   color: black;
   font-size: 20px;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-fieldset {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-legend {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-bottom: 5px;
 }
 
 label {
@@ -188,49 +166,60 @@ input[type="submit"] {
 }
 
 .quantity-field {
-
   display: flex;
-
   align-items: center;
-
   margin-bottom: 10px;
-
   background-color: lightgray;
-
   padding: 5px;
-
   border-radius: 5px;
-
 }
-
 
 .quantity-field button {
-
   background-color: lightgray;
-
-
   border: none;
-
   padding: 5px;
-
   font-size: 1.5rem;
-
   margin-right: 5px;
-
   cursor: pointer;
-
 }
-
 
 .quantity-field input[type="number"] {
   background-color: none;
-
   width: 50px;
-
   padding: 5px;
-
   font-size: 1.2rem;
-
   text-align: center;
-
 }
+
+@media screen and (max-width: 767px) {
+  .left-side,
+  .right-side {
+     width: 100%;
+     float: none;
+   }
+ 
+  .product-info {
+     padding-right: 0;
+   }
+ 
+  .thumbnails {
+     padding-left: 0;
+   }
+ 
+  .color-selector,
+  .size-selector,
+  .quantity-field {
+     flex-wrap: wrap;
+   }
+ 
+  .color-option,
+  .size-selector label,
+  .quantity-input {
+     flex-basis: 100%;
+     margin-bottom: 10px;
+   }
+ 
+  .quantity-field button {
+     flex-basis: auto;
+   }
+ }
