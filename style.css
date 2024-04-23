@@ -1,36 +1,236 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
 body {
-  height: 100%;
+  font-family: 'Inter', sans-serif;
+  padding: 25px;
+}
+
+.left-side {
+  width: 50%;
+  float: left;
+}
+
+.right-side {
+  width: 50%;
+  float: left;
+}
+
+pre {
+  color: grey
+}
+
+.product-image {
   width: 100%;
-  margin: 0;
+  height: auto;
 }
-body {
+
+.thumbnails {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
+  overflow-x: auto;
+  padding-left: 10%;
 }
-a {
-  display: inline-block;
-  color: lightgrey;
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.thumbnail:hover {
+  border: 5px solid blue;
+  color: blue;
+}
+
+.product-info {
+  margin-top: 20px;
+}
+
+.product-info {
+  padding-right: 35px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-right: 100px;
+}
+
+.price {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f00;
+}
+
+.compare-at-price {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+  color: #ccc;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
+.percentage-off {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #f00;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: right;
+}
+
+.color-selector {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.size-selector {
+display: flex;
+justify-content: left;
+gap: 10px;
+padding-bottom: 25px;
+}
+
+.size-selector input[type="radio"]:checked {
+  /* Set the background color for the checked radio button */
+  background-color: #007bff;
+
+  /* Set the border color for the checked radio button */
+  border-color: #007bff;
+
+}
+
+.quantity-selector {
+  margin-bottom: 20px;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart-button {
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.description {
+  padding-top: 25px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.container {
+
+  border-radius: 25px;
+  padding-left: 15%;
+
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
   color: white;
-  transform: scale(1.03);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
+.quantity-field {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  background-color: lightgray;
+
+  padding: 5px;
+
+  border-radius: 5px;
+
+}
+
+
+.quantity-field button {
+
+  background-color: lightgray;
+
+
+  border: none;
+
+  padding: 5px;
+
+  font-size: 1.5rem;
+
+  margin-right: 5px;
+
+  cursor: pointer;
+
+}
+
+
+.quantity-field input[type="number"] {
+  background-color: none;
+
+  width: 50px;
+
+  padding: 5px;
+
+  font-size: 1.2rem;
+
+  text-align: center;
+
+}
